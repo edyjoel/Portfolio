@@ -8,6 +8,12 @@
   font-family: 'Ubuntu', sans-serif;
 }
 
+/* box sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
 .btn {
   display: inline-block;
   text-decoration: none;
@@ -108,9 +114,14 @@ img {
   margin-bottom: 10px;
 }
 .welcome-section p {
-  margin: 0;
+  margin-top: 0;
   font-style: italic;
   font-size: 18px;
+  text-align: center;
+}
+
+.welcome-section a {
+  color: white;
 }
 
 .technologies-section {
@@ -193,6 +204,13 @@ img {
   z-index: 1;
   opacity: 0;
   transition: .4s;
+  padding: 20px;
+  text-align: center;
+}
+
+.project-overlay p {
+  margin: 0;
+  line-height: 150%;
 }
 
 .project:hover .project-image {
